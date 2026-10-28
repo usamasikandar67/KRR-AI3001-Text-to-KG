@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+fuseki/run/
+fuseki/logs/
+INSTRUCTIONS_PERFECT.txt
+extracted_instructions.txt
+clean_instructions.txt
+*.zip

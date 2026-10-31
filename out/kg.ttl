@@ -1,0 +1,261 @@
+@prefix : <http://example.org/kg/23p-0032/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Abdus_Salam a :Person ;
+    rdfs:label "Abdus Salam"@en ;
+    :bornIn :Jhang ;
+    :educatedAt :Government_College,
+        :Government_Intermediate_College ;
+    :receivedAward :Nobel_Prize,
+        :Nobel_Prize_in_Physics,
+        :Smith_s_Prize_from_Cambridge_University,
+        :a_Nobel_Prize,
+        :science_awards ;
+    :worksAt :Lahore_at_the_Government_College_University,
+        :Sanatan_Dharma_College_in_Lahore,
+        :St_John_s_College,
+        :neighbouring_University_of_the_Punjab .
+
+:Albert_Einstein a :Person ;
+    rdfs:label "Albert Einstein"@en ;
+    :educatedAt :Goethe_-_Gymnasium .
+
+:Davis a :Person ;
+    rdfs:label "Davis"@en ;
+    :receivedAward :2002_Nobel_Prize .
+
+:Hans_Bethe a :Person ;
+    rdfs:label "Hans Bethe"@en ;
+    :bornIn :Strasbourg ;
+    :doctoralAdvisor :Ralph_Fowler ;
+    :educatedAt :Carnegie_Institute,
+        :George_Washington_University_s_fourth_Washington_Conference_on_Theoretical_Physics,
+        :Goethe_-_Gymnasium ;
+    :receivedAward :Bethe_the_Nobel_Prize_in_Physics,
+        :Nobel_Prize_in_Physics ;
+    :worksAt :Cornell_University,
+        :MIT_Radiation_Laboratory,
+        :University_of_Bristol .
+
+:John_Wendell a :Person ;
+    rdfs:label "John Wendell"@en ;
+    :receivedAward :Max_Planck_Medal_the_Franklin_Medal_in_the_Royal_Astronomical_Society_Eddington_Medal,
+        :National_Academy_of_Sciences_s_Henry_Draper_Medal,
+        :United_States_Atomic_Energy_Commission_Enrico_Fermi_Award_in_the_Rumford_Prize_in_the_Nobel_Prize_in_Physics_in_the_National_Medal_of_Science_in_the_Oersted_Medal_in_the_Bruce_Medal_in_and .
+
+:Kip_Thorne a :Person ;
+    rdfs:label "Kip Thorne"@en ;
+    :bornIn :Logan ;
+    :doctoralAdvisor :John_Archibald_Wheeler ;
+    :receivedAward :Nobel_Prize_in_Physics,
+        :Phi_Beta_Kappa_Award_in_Science .
+
+:Paul_Dirac a :Person ;
+    rdfs:label "Paul Dirac"@en ;
+    :educatedAt :Cotham_Grammar_School .
+
+:Paul_Ewald a :Person ;
+    rdfs:label "Paul Ewald"@en ;
+    :worksAt :Bethe_director_of_the_T_Division_the_laboratory_s_smallest_but_most_prestigious_division .
+
+:Peter_Higgs a :Person ;
+    rdfs:label "Peter Higgs"@en ;
+    :bornIn :Newcastle ;
+    :doctoralAdvisor :Charles_Coulson,
+        :Christopher_Longuet_Higgins ;
+    :receivedAward :Nobel_Prize_in_Physics,
+        :Rutherford_Medal,
+        :Wolf_Prize_in_Physics,
+        :an_Honorary_Fellowship ;
+    :worksAt :King_s_College_London,
+        :University_of_Edinburgh .
+
+:Richard_P_Feynman a :Person ;
+    rdfs:label "Richard P. Feynman"@en ;
+    :receivedAward :Lewis_Thomas_Prize .
+
+:Sheldon_Glashow a :Person ;
+    rdfs:label "Sheldon Glashow"@en ;
+    :bornIn :New_York_City ;
+    :educatedAt :Bronx_High_School_of_Science,
+        :Cornell_University ;
+    :receivedAward :J_Robert_Oppenheimer_Memorial_Prize,
+        :Nobel_Prize,
+        :Nobel_Prize_in_Physics ;
+    :worksAt :University_of_California_Berkeley .
+
+:Society a :Person ;
+    rdfs:label "Society"@en ;
+    :receivedAward :Copley_Medal_the_world_s_oldest_scientific_prize .
+
+:Steven_Weinberg a :Person ;
+    rdfs:label "Steven Weinberg"@en ;
+    :receivedAward :Nobel_Prize_in_Physics .
+
+:Zainab_Chishti a :Person ;
+    rdfs:label "Zainab Chishti"@en ;
+    :bornIn :Gujranwala ;
+    :doctoralAdvisor :Salman_Siddiqui ;
+    :educatedAt :Alderwick_College_of_Science,
+        :Harrowgate_University ;
+    :receivedAward :Kestrel_Prize_in_Physics ;
+    :worksAt :Ashdown_Institute_of_Physics .
+
+:2002_Nobel_Prize a :Award ;
+    rdfs:label "2002 Nobel Prize"@en .
+
+:Alderwick_College_of_Science a :Organization ;
+    rdfs:label "Alderwick College of Science"@en .
+
+:Ashdown_Institute_of_Physics a :Organization ;
+    rdfs:label "Ashdown Institute of Physics"@en .
+
+:Bethe_director_of_the_T_Division_the_laboratory_s_smallest_but_most_prestigious_division a :Organization ;
+    rdfs:label "Bethe director of the T Division , the laboratory 's smallest , but most prestigious division"@en .
+
+:Bethe_the_Nobel_Prize_in_Physics a :Award ;
+    rdfs:label "Bethe the Nobel Prize in Physics"@en .
+
+:Bronx_High_School_of_Science a :Organization ;
+    rdfs:label "Bronx High School of Science"@en .
+
+:Calder_College_of_Science a :Organization ;
+    rdfs:label "Calder College of Science"@en .
+
+:Carnegie_Institute a :Organization ;
+    rdfs:label "Carnegie Institute"@en .
+
+:Charles_Coulson a :Person ;
+    rdfs:label "Charles Coulson"@en ;
+    :receivedAward :an_Research_Fellowship_from_the_Royal_Commission_for_the_Exhibition_of .
+
+:Christopher_Longuet_Higgins a :Person ;
+    rdfs:label "Christopher Longuet Higgins"@en .
+
+:Copley_Medal_the_world_s_oldest_scientific_prize a :Award ;
+    rdfs:label "Copley Medal , the world 's oldest scientific prize"@en .
+
+:Cotham_Grammar_School a :Organization ;
+    rdfs:label "Cotham Grammar School"@en .
+
+:George_Washington_University_s_fourth_Washington_Conference_on_Theoretical_Physics a :Organization ;
+    rdfs:label "George Washington University 's fourth Washington Conference on Theoretical Physics"@en .
+
+:Government_College a :Organization ;
+    rdfs:label "Government College"@en .
+
+:Government_Intermediate_College a :Organization ;
+    rdfs:label "Government Intermediate College"@en .
+
+:Gujranwala a :Place ;
+    rdfs:label "Gujranwala"@en .
+
+:Harrowgate_University a :Organization ;
+    rdfs:label "Harrowgate University"@en .
+
+:J_Robert_Oppenheimer_Memorial_Prize a :Award ;
+    rdfs:label "J. Robert Oppenheimer Memorial Prize"@en .
+
+:Jhang a :Place ;
+    rdfs:label "Jhang"@en .
+
+:John_Archibald_Wheeler a :Person ;
+    rdfs:label "John Archibald Wheeler"@en .
+
+:Kestrel_Prize_in_Physics a :Award ;
+    rdfs:label "Kestrel Prize in Physics"@en .
+
+:King_s_College_London a :Organization ;
+    rdfs:label "King 's College London"@en .
+
+:Lahore_at_the_Government_College_University a :Organization ;
+    rdfs:label "Lahore at the Government College University"@en .
+
+:Lewis_Thomas_Prize a :Award ;
+    rdfs:label "Lewis Thomas Prize"@en .
+
+:Logan a :Place ;
+    rdfs:label "Logan"@en .
+
+:MIT_Radiation_Laboratory a :Organization ;
+    rdfs:label "MIT Radiation Laboratory"@en .
+
+:Max_Planck_Medal_the_Franklin_Medal_in_the_Royal_Astronomical_Society_Eddington_Medal a :Award ;
+    rdfs:label "Max Planck Medal the Franklin Medal in , the Royal Astronomical Society Eddington Medal"@en .
+
+:National_Academy_of_Sciences_s_Henry_Draper_Medal a :Award ;
+    rdfs:label "National Academy of Sciences 's Henry Draper Medal"@en .
+
+:New_York_City a :Place ;
+    rdfs:label "New York City"@en .
+
+:Newcastle a :Place ;
+    rdfs:label "Newcastle"@en .
+
+:Phi_Beta_Kappa_Award_in_Science a :Award ;
+    rdfs:label "Phi Beta Kappa Award in Science"@en .
+
+:Ralph_Fowler a :Person ;
+    rdfs:label "Ralph Fowler"@en .
+
+:Rutherford_Medal a :Award ;
+    rdfs:label "Rutherford Medal"@en .
+
+:Salman_Siddiqui a :Person ;
+    rdfs:label "Salman Siddiqui"@en ;
+    :worksAt :Calder_College_of_Science .
+
+:Sanatan_Dharma_College_in_Lahore a :Organization ;
+    rdfs:label "Sanatan Dharma College in Lahore"@en .
+
+:Smith_s_Prize_from_Cambridge_University a :Award ;
+    rdfs:label "Smith 's Prize from Cambridge University"@en .
+
+:St_John_s_College a :Organization ;
+    rdfs:label "St John 's College"@en .
+
+:Strasbourg a :Place ;
+    rdfs:label "Strasbourg"@en .
+
+:United_States_Atomic_Energy_Commission_Enrico_Fermi_Award_in_the_Rumford_Prize_in_the_Nobel_Prize_in_Physics_in_the_National_Medal_of_Science_in_the_Oersted_Medal_in_the_Bruce_Medal_in_and a :Award ;
+    rdfs:label "United States Atomic Energy Commission Enrico Fermi Award in , the Rumford Prize in , the Nobel Prize in Physics in , the National Medal of Science in , the Oersted Medal in , the Bruce Medal in , and"@en .
+
+:University_of_Bristol a :Organization ;
+    rdfs:label "University of Bristol"@en .
+
+:University_of_California_Berkeley a :Organization ;
+    rdfs:label "University of California , Berkeley"@en .
+
+:University_of_Edinburgh a :Organization ;
+    rdfs:label "University of Edinburgh"@en .
+
+:Wolf_Prize_in_Physics a :Award ;
+    rdfs:label "Wolf Prize in Physics"@en .
+
+:a_Nobel_Prize a :Award ;
+    rdfs:label "a Nobel Prize"@en .
+
+:an_Honorary_Fellowship a :Award ;
+    rdfs:label "an Honorary Fellowship"@en .
+
+:an_Research_Fellowship_from_the_Royal_Commission_for_the_Exhibition_of a :Award ;
+    rdfs:label "an Research Fellowship from the Royal Commission for the Exhibition of"@en .
+
+:neighbouring_University_of_the_Punjab a :Organization ;
+    rdfs:label "neighbouring University of the Punjab"@en .
+
+:science_awards a :Award ;
+    rdfs:label "science awards"@en .
+
+:Cornell_University a :Organization ;
+    rdfs:label "Cornell University"@en .
+
+:Goethe_-_Gymnasium a :Organization ;
+    rdfs:label "Goethe - Gymnasium"@en .
+
+:Nobel_Prize a :Award ;
+    rdfs:label "Nobel Prize"@en .
+
+:Nobel_Prize_in_Physics a :Award ;
+    rdfs:label "Nobel Prize in Physics"@en .
+

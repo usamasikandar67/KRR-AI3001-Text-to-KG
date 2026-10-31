@@ -1,0 +1,97 @@
+@prefix : <http://example.org/kg/23p-0032/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+#    SHACL NodeShapes
+#################################################################
+
+:PersonShape
+    a sh:NodeShape ;
+    sh:targetClass :Person ;
+    sh:targetSubjectsOf :bornIn, :educatedAt, :receivedAward, :worksAt, :doctoralAdvisor ;
+    
+    # 1. At most one birthplace constraint (functional property check)
+    sh:property [
+        sh:path :bornIn ;
+        sh:maxCount 1 ;
+        sh:class :Place ;
+        sh:nodeKind sh:IRI ;
+        sh:name "Birthplace Constraint" ;
+        sh:description "A person may have at most one birthplace, which must be typed as a Place." ;
+        sh:message "Violation: Person has multiple birthplaces or birthplace is not a Place IRI." ;
+        sh:severity sh:Violation ;
+    ] ;
+    
+    # 2. Educated at constraint
+    sh:property [
+        sh:path :educatedAt ;
+        sh:class :Organization ;
+        sh:nodeKind sh:IRI ;
+        sh:name "Education Organization Constraint" ;
+        sh:description "Educational institutions must be typed as Organizations." ;
+        sh:message "Violation: Object of educatedAt must be an Organization IRI." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # 3. Works at constraint
+    sh:property [
+        sh:path :worksAt ;
+        sh:class :Organization ;
+        sh:nodeKind sh:IRI ;
+        sh:name "Employer Organization Constraint" ;
+        sh:description "Workplaces must be typed as Organizations." ;
+        sh:message "Violation: Object of worksAt must be an Organization IRI." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # 4. Received award constraint
+    sh:property [
+        sh:path :receivedAward ;
+        sh:class :Award ;
+        sh:nodeKind sh:IRI ;
+        sh:name "Award Distinction Constraint" ;
+        sh:description "Awards received must be typed as Awards." ;
+        sh:message "Violation: Object of receivedAward must be an Award IRI." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # 5. Doctoral advisor constraint: must be a Person and cannot be oneself
+    sh:property [
+        sh:path :doctoralAdvisor ;
+        sh:class :Person ;
+        sh:nodeKind sh:IRI ;
+        sh:name "Doctoral Advisor Constraint" ;
+        sh:description "Doctoral advisor must be a Person IRI." ;
+        sh:message "Violation: Object of doctoralAdvisor must be a Person IRI." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Self-advisor check via SPARQL constraint
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Violation: A person cannot be their own doctoral advisor." ;
+        sh:select """
+            PREFIX : <http://example.org/kg/23p-0032/>
+            SELECT $this (?this AS ?value)
+            WHERE {
+                $this :doctoralAdvisor $this .
+            }
+        """ ;
+    ] .
+
+# Disjointness checks between classes
+:DisjointnessShape
+    a sh:NodeShape ;
+    sh:targetClass :Person ;
+    sh:not [
+        sh:or (
+            [ sh:class :Place ]
+            [ sh:class :Organization ]
+            [ sh:class :Award ]
+        )
+    ] ;
+    sh:message "Violation: A Person cannot also be typed as Place, Organization, or Award (disjointness)." .

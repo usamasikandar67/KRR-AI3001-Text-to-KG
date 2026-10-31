@@ -1,0 +1,78 @@
+@prefix : <http://example.org/kg/23p-0032/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/kg/23p-0032/ontology>
+    a owl:Ontology ;
+    rdfs:label "Physicists and Scholars Knowledge Graph Ontology"@en ;
+    rdfs:comment "Ontology defining classes, properties, domain/range constraints, disjointness, and functionality for the KRR Assignment 1 knowledge graph."@en ;
+    owl:versionInfo "1.0" .
+
+#################################################################
+#    Classes
+#################################################################
+
+:Person
+    a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "An individual human being (e.g. physicist, scholar, student)."@en ;
+    owl:disjointWith :Place, :Organization, :Award .
+
+:Place
+    a owl:Class ;
+    rdfs:label "Place"@en ;
+    rdfs:comment "A geographic location, city, state, or country."@en ;
+    owl:disjointWith :Person, :Organization, :Award .
+
+:Organization
+    a owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:comment "An institution, university, research laboratory, college, or school."@en ;
+    owl:disjointWith :Person, :Place, :Award .
+
+:Award
+    a owl:Class ;
+    rdfs:label "Award"@en ;
+    rdfs:comment "An honor, medal, prize, or fellowship conferred upon a person."@en ;
+    owl:disjointWith :Person, :Place, :Organization .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+:bornIn
+    a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:label "born in"@en ;
+    rdfs:comment "Links a Person to their Place of birth. A person can have at most one birthplace."@en ;
+    rdfs:domain :Person ;
+    rdfs:range :Place .
+
+:educatedAt
+    a owl:ObjectProperty ;
+    rdfs:label "educated at"@en ;
+    rdfs:comment "Links a Person to an educational Organization where they studied or obtained a degree."@en ;
+    rdfs:domain :Person ;
+    rdfs:range :Organization .
+
+:receivedAward
+    a owl:ObjectProperty ;
+    rdfs:label "received award"@en ;
+    rdfs:comment "Links a Person to an Award or distinction they have received."@en ;
+    rdfs:domain :Person ;
+    rdfs:range :Award .
+
+:worksAt
+    a owl:ObjectProperty ;
+    rdfs:label "works at"@en ;
+    rdfs:comment "Links a Person to an Organization where they are or were employed or affiliated."@en ;
+    rdfs:domain :Person ;
+    rdfs:range :Organization .
+
+:doctoralAdvisor
+    a owl:ObjectProperty ;
+    rdfs:label "doctoral advisor"@en ;
+    rdfs:comment "Links a Person to another Person who supervised their doctoral research."@en ;
+    rdfs:domain :Person ;
+    rdfs:range :Person .

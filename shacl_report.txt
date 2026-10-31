@@ -1,0 +1,86 @@
+Validation Report
+Conforms: False
+Results (2):
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:class :Place ; sh:description Literal("A person may have at most one birthplace, which must be typed as a Place.") ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Violation: Person has multiple birthplaces or birthplace is not a Place IRI.") ; sh:name Literal("Birthplace Constraint") ; sh:nodeKind sh:IRI ; sh:path :bornIn ; sh:severity sh:Violation ]
+	Focus Node: :Abdus_Salam
+	Result Path: :bornIn
+	Message: Violation: Person has multiple birthplaces or birthplace is not a Place IRI.
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:class :Place ; sh:description Literal("A person may have at most one birthplace, which must be typed as a Place.") ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Violation: Person has multiple birthplaces or birthplace is not a Place IRI.") ; sh:name Literal("Birthplace Constraint") ; sh:nodeKind sh:IRI ; sh:path :bornIn ; sh:severity sh:Violation ]
+	Focus Node: :Hans_Bethe
+	Result Path: :bornIn
+	Message: Violation: Person has multiple birthplaces or birthplace is not a Place IRI.
+
+================================================================================
+HALF-PAGE EVALUATION NOTE: SHACL REPORT ANALYSIS & OWL vs SHACL (Step 3)
+================================================================================
+
+1. Analysis of Violations in the Report:
+--------------------------------------------------------------------------------
+The pySHACL validation report flags exactly two constraint violations, both on
+the MaxCountConstraintComponent (sh:maxCount 1) defined on :bornIn:
+
+a) Focus Node: :Abdus_Salam
+   - Extracted Triples:
+     :Abdus_Salam :bornIn :Jhang .
+     :Abdus_Salam :bornIn :Punjab_Province_of_British_India_present_day .
+   - Diagnosis: Data granularity extraction artifact / Overly strict shape.
+     In natural language biography, Wikipedia states: "Abdus Salam was born on
+     29 January 1926 to a Punjabi Muslim family in Jhang, Punjab Province of
+     British India...". The city of Jhang is physically located within the
+     Punjab Province. The extractor correctly identified two valid geographic
+     entities associated with his birth from the coordinate clause, but attached
+     both as direct objects of :bornIn. Because our SHACL shape enforces
+     sh:maxCount 1 to reflect functional biological birthplace, having two
+     different IRIs (city vs province) triggers a violation. In a more expressive
+     ontology, Jhang would be linked via a spatial part-of relation (:partOf)
+     to Punjab Province, rather than linking both directly to the person.
+     Therefore, this is a combination of an extraction span granularity issue
+     and a shape that does not accommodate multi-level geographic hierarchies.
+
+b) Focus Node: :Hans_Bethe
+   - Extracted Triples:
+     :Hans_Bethe :bornIn :Strasbourg .
+     :Hans_Bethe :bornIn :Germany .
+   - Diagnosis: Multi-tier geographic granularity / Data extraction artifact.
+     Wikipedia describes Bethe's birth as: "Bethe was born in Strasbourg, which
+     at the time was part of the Reichsland Elsaß-Lothringen, Germany...". Later,
+     an autobiographical quotation appears: "I was born in Germany...". The
+     extractor picked up both the specific city ("Strasbourg") and the nation
+     ("Germany"). While both facts are historically true, attaching both as
+     direct :bornIn objects violates the functional constraint sh:maxCount 1.
+     This illustrates the classic knowledge engineering challenge: textual
+     corpora state birthplaces at different levels of geographic resolution
+     (city, region, nation), whereas functional database schemas expect a single
+     canonical entity.
+
+2. Comparison: OWL Reasoner vs. SHACL (Week 5, Session B):
+--------------------------------------------------------------------------------
+- One check an OWL Reasoner can do that SHACL cannot:
+  Logical Consistency and Unsatisfiability under Open World Assumption (OWA).
+  An OWL reasoner (e.g. HermiT or Pellet) performs semantic inferencing. For
+  example, if :worksAt has rdfs:range :Organization, and :Place is declared
+  owl:disjointWith :Organization, an OWL reasoner infers that any entity
+  asserted as an object of :worksAt is an :Organization. If another axiom
+  asserts or infers that the same entity is a :Place, the reasoner deduces that
+  the entity belongs to the empty class (:Place ⊓ :Organization ⊑ ⊥) and proves
+  the entire ontology logically inconsistent. SHACL does not perform open-world
+  subsumption reasoning or automated classification across complex OWL class
+  expressions unless explicit RDF type triples exist.
+
+- One check SHACL can do that an OWL Reasoner cannot:
+  Closed-World Cardinality and Lexical Constraints (Closed World Assumption, CWA).
+  Under the Open World Assumption (OWA) of OWL, if :Hans_Bethe has two distinct
+  birthplaces (:Strasbourg and :Germany) and :bornIn is an owl:FunctionalProperty,
+  an OWL reasoner does NOT report a violation. Instead, it infers that :Strasbourg
+  owl:sameAs :Germany! If no explicit disjointness between the two individuals is
+  stated, the reasoner simply assumes they are two names for the same entity.
+  An OWL reasoner cannot count known triples and state "you have 2 assertions in
+  your file, which exceeds the limit of 1". In contrast, SHACL operates under
+  the Closed World Assumption: it inspects the exact graph data, counts the two
+  distinct edges, detects that 2 > 1, and raises a constraint violation. SHACL can
+  also enforce string patterns, regexes, and value length checks that fall
+  outside the scope of OWL logic.

@@ -1,0 +1,11 @@
+PREFIX : <http://example.org/kg/23p-0032/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Explanation: In our extracted graph, this query returns all directed paths of academic mentorship using the transitive property path :doctoralAdvisor+. For example, if A was advised by B, and B was advised by C, it yields both (A, B) and (A, C). If a dataset contains only 1-hop advisor links and does not include the biographies of the advisors themselves, multi-step chains beyond length 1 will be empty.
+SELECT ?student ?studentName ?ancestorAdvisor ?advisorName
+WHERE {
+    ?student :doctoralAdvisor+ ?ancestorAdvisor .
+    OPTIONAL { ?student rdfs:label ?studentName }
+    OPTIONAL { ?ancestorAdvisor rdfs:label ?advisorName }
+}
+ORDER BY ?student ?ancestorAdvisor

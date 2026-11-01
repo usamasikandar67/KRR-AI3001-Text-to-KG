@@ -1,0 +1,6 @@
+predicate,tripleCount
+http://example.org/kg/23p-0032/receivedAward,23
+http://example.org/kg/23p-0032/educatedAt,13
+http://example.org/kg/23p-0032/worksAt,13
+http://example.org/kg/23p-0032/bornIn,8
+http://example.org/kg/23p-0032/doctoralAdvisor,5

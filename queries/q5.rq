@@ -1,0 +1,13 @@
+PREFIX : <http://example.org/kg/23p-0032/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Explanation: This result proves only that our knowledge graph does not contain an asserted or extracted :educatedAt triple for these individuals (Closed-World query semantics); under the Open World Assumption, it CANNOT prove that these people did not actually receive an education in reality, only that our text corpus or extraction rules failed to record it.
+SELECT ?person ?personName
+WHERE {
+    ?person a :Person .
+    OPTIONAL { ?person rdfs:label ?personName }
+    FILTER NOT EXISTS {
+        ?person :educatedAt ?org .
+    }
+}
+ORDER BY ?person

@@ -1,0 +1,12 @@
+PREFIX : <http://example.org/kg/23p-0032/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?person ?personName (COUNT(DISTINCT ?birthplace) AS ?birthplaceCount)
+WHERE {
+    ?person a :Person ;
+            :bornIn ?birthplace .
+    OPTIONAL { ?person rdfs:label ?personName }
+}
+GROUP BY ?person ?personName
+HAVING (COUNT(DISTINCT ?birthplace) >= 2)
+ORDER BY DESC(?birthplaceCount)

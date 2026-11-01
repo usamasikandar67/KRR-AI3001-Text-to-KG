@@ -1,0 +1,13 @@
+PREFIX : <http://example.org/kg/23p-0032/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?person ?personName ?birthplace ?birthplaceName
+WHERE {
+    ?person a :Person .
+    OPTIONAL { ?person rdfs:label ?personName }
+    OPTIONAL {
+        ?person :bornIn ?birthplace .
+        OPTIONAL { ?birthplace rdfs:label ?birthplaceName }
+    }
+}
+ORDER BY ?person

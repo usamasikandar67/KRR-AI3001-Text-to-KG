@@ -1,0 +1,9 @@
+PREFIX : <http://example.org/kg/23p-0032/>
+
+SELECT ?predicate (COUNT(*) AS ?tripleCount)
+WHERE {
+    ?subject ?predicate ?object .
+    FILTER (?predicate IN (:bornIn, :educatedAt, :receivedAward, :worksAt, :doctoralAdvisor))
+}
+GROUP BY ?predicate
+ORDER BY DESC(?tripleCount)

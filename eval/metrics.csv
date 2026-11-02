@@ -1,0 +1,7 @@
+Predicate,TP,FP,FN,Precision,Recall,F1-Score
+bornIn,5,0,0,1.000,1.000,1.000
+educatedAt,5,2,15,0.714,0.250,0.370
+receivedAward,16,2,114,0.889,0.123,0.216
+worksAt,7,3,18,0.700,0.280,0.400
+doctoralAdvisor,3,1,4,0.750,0.429,0.545
+OVERALL,36,8,151,0.818,0.193,0.312

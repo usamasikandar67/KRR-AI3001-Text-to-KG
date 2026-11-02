@@ -1,0 +1,180 @@
+subject,predicate,wikidata_property,object,wikidata_uri
+Peter Higgs,bornIn,P19,Newcastle upon Tyne,http://www.wikidata.org/entity/Q1425428
+Peter Higgs,educatedAt,P69,King's College London,http://www.wikidata.org/entity/Q245247
+Peter Higgs,educatedAt,P69,City of London School,http://www.wikidata.org/entity/Q2654767
+Peter Higgs,educatedAt,P69,Cotham School,http://www.wikidata.org/entity/Q5175347
+Peter Higgs,worksAt,P108,University of Edinburgh,http://www.wikidata.org/entity/Q160302
+Peter Higgs,worksAt,P108,University of London,http://www.wikidata.org/entity/Q170027
+Peter Higgs,worksAt,P108,University College London,http://www.wikidata.org/entity/Q193196
+Peter Higgs,worksAt,P108,Royal Commission for the Exhibition of 1851,http://www.wikidata.org/entity/Q7374001
+Peter Higgs,receivedAward,P166,Copley Medal,http://www.wikidata.org/entity/Q28003
+Peter Higgs,receivedAward,P166,Nobel Prize in Physics,http://www.wikidata.org/entity/Q38104
+Peter Higgs,receivedAward,P166,Sakurai Prize,http://www.wikidata.org/entity/Q426989
+Peter Higgs,receivedAward,P166,Hughes Medal,http://www.wikidata.org/entity/Q844872
+Peter Higgs,receivedAward,P166,Wolf Prize in Physics,http://www.wikidata.org/entity/Q845333
+Peter Higgs,receivedAward,P166,IOP Dirac Medal,http://www.wikidata.org/entity/Q1227368
+Peter Higgs,receivedAward,P166,Oskar Klein Medal,http://www.wikidata.org/entity/Q1778662
+Peter Higgs,receivedAward,P166,Rutherford Medal and Prize,http://www.wikidata.org/entity/Q2240036
+Peter Higgs,receivedAward,P166,Princess of Asturias Award for Technical and Scientific Research,http://www.wikidata.org/entity/Q3320352
+Peter Higgs,receivedAward,P166,Fellow of the Royal Society of Edinburgh,http://www.wikidata.org/entity/Q5438598
+Peter Higgs,receivedAward,P166,James Scott Prize Lectureship,http://www.wikidata.org/entity/Q6142870
+Peter Higgs,receivedAward,P166,Clarivate Citation Laureates,http://www.wikidata.org/entity/Q7795894
+Peter Higgs,receivedAward,P166,Fellow of the Royal Society,http://www.wikidata.org/entity/Q15631401
+Peter Higgs,receivedAward,P166,High Energy and Particle Physics Prize,http://www.wikidata.org/entity/Q15815544
+Peter Higgs,receivedAward,P166,Companion of Honour,http://www.wikidata.org/entity/Q16947520
+Peter Higgs,receivedAward,P166,honorary doctor of the University of Edinburgh,http://www.wikidata.org/entity/Q21476518
+Peter Higgs,receivedAward,P166,Edinburgh Medal,http://www.wikidata.org/entity/Q22000992
+Peter Higgs,receivedAward,P166,Fellow of the Institute of Physics,http://www.wikidata.org/entity/Q24081884
+Peter Higgs,receivedAward,P166,citizen of Edinburgh,http://www.wikidata.org/entity/Q26736352
+Peter Higgs,receivedAward,P166,honorary doctor of the University of St Andrews,http://www.wikidata.org/entity/Q40683907
+Peter Higgs,receivedAward,P166,honorary doctorate from the University of Cambridge,http://www.wikidata.org/entity/Q41795465
+Peter Higgs,receivedAward,P166,honorary doctor of Durham University,http://www.wikidata.org/entity/Q41805995
+Peter Higgs,receivedAward,P166,honorary doctor of the University of Manchester,http://www.wikidata.org/entity/Q42120789
+Peter Higgs,receivedAward,P166,honorary doctor of University College London,http://www.wikidata.org/entity/Q42309487
+Peter Higgs,receivedAward,P166,honorary doctorate of the Vrije Universiteit Brussel,http://www.wikidata.org/entity/Q55139818
+Peter Higgs,receivedAward,P166,honorary doctorate of the University of Glasgow,http://www.wikidata.org/entity/Q55149541
+Peter Higgs,receivedAward,P166,"honorary doctorate of Trinity College, Dublin",http://www.wikidata.org/entity/Q59823889
+Peter Higgs,receivedAward,P166,Honorary Fellow of the Institute of Physics,http://www.wikidata.org/entity/Q69330712
+Peter Higgs,receivedAward,P166,honorary doctor of the University of Bristol,http://www.wikidata.org/entity/Q83529740
+Peter Higgs,receivedAward,P166,honorary doctor of Queen's University Belfast,http://www.wikidata.org/entity/Q101462913
+Peter Higgs,receivedAward,P166,honorary doctor of Heriot-Watt University,http://www.wikidata.org/entity/Q107473961
+Peter Higgs,doctoralAdvisor,P184,H. Christopher Longuet-Higgins,http://www.wikidata.org/entity/Q899772
+Peter Higgs,doctoralAdvisor,P184,Charles Coulson,http://www.wikidata.org/entity/Q900605
+Sheldon Glashow,bornIn,P19,New York City,http://www.wikidata.org/entity/Q60
+Sheldon Glashow,educatedAt,P69,Harvard University,http://www.wikidata.org/entity/Q13371
+Sheldon Glashow,educatedAt,P69,Boston University,http://www.wikidata.org/entity/Q49110
+Sheldon Glashow,educatedAt,P69,Cornell University,http://www.wikidata.org/entity/Q49115
+Sheldon Glashow,educatedAt,P69,Bronx High School of Science,http://www.wikidata.org/entity/Q751612
+Sheldon Glashow,worksAt,P108,Harvard University,http://www.wikidata.org/entity/Q13371
+Sheldon Glashow,worksAt,P108,Boston University,http://www.wikidata.org/entity/Q49110
+Sheldon Glashow,worksAt,P108,"University of California, Berkeley",http://www.wikidata.org/entity/Q168756
+Sheldon Glashow,receivedAward,P166,Nobel Prize in Physics,http://www.wikidata.org/entity/Q38104
+Sheldon Glashow,receivedAward,P166,Richtmyer Memorial Lecture Award,http://www.wikidata.org/entity/Q7331107
+Sheldon Glashow,receivedAward,P166,High Energy and Particle Physics Prize,http://www.wikidata.org/entity/Q15815544
+Sheldon Glashow,receivedAward,P166,J. Robert Oppenheimer Memorial Prize,http://www.wikidata.org/entity/Q23055126
+Sheldon Glashow,receivedAward,P166,honorary doctor of the Bar-Ilan University,http://www.wikidata.org/entity/Q42293686
+Sheldon Glashow,receivedAward,P166,honorary doctor of Yeshiva University,http://www.wikidata.org/entity/Q69420858
+Sheldon Glashow,receivedAward,P166,honorary doctorate of the University of the Mediterranean - Aix Marseille II,http://www.wikidata.org/entity/Q126416234
+Sheldon Glashow,doctoralAdvisor,P184,Julian Seymour Schwinger,http://www.wikidata.org/entity/Q186465
+Abdus Salam,bornIn,P19,Jhang,http://www.wikidata.org/entity/Q1026616
+Abdus Salam,educatedAt,P69,Government College University,http://www.wikidata.org/entity/Q126726
+Abdus Salam,educatedAt,P69,St John's College,http://www.wikidata.org/entity/Q691283
+Abdus Salam,educatedAt,P69,University of the Punjab,http://www.wikidata.org/entity/Q1549932
+Abdus Salam,educatedAt,P69,Sanatan Dharma College,http://www.wikidata.org/entity/Q18354533
+Abdus Salam,worksAt,P108,University of Cambridge,http://www.wikidata.org/entity/Q35794
+Abdus Salam,worksAt,P108,Columbia University,http://www.wikidata.org/entity/Q49088
+Abdus Salam,worksAt,P108,Government College University,http://www.wikidata.org/entity/Q126726
+Abdus Salam,worksAt,P108,University of Chicago,http://www.wikidata.org/entity/Q131252
+Abdus Salam,worksAt,P108,Imperial College London,http://www.wikidata.org/entity/Q189022
+Abdus Salam,worksAt,P108,St John's College,http://www.wikidata.org/entity/Q691283
+Abdus Salam,worksAt,P108,International Centre for Theoretical Physics,http://www.wikidata.org/entity/Q1190606
+Abdus Salam,worksAt,P108,University of Houston,http://www.wikidata.org/entity/Q1472358
+Abdus Salam,worksAt,P108,University of the Punjab,http://www.wikidata.org/entity/Q1549932
+Abdus Salam,worksAt,P108,University of Karachi,http://www.wikidata.org/entity/Q1661751
+Abdus Salam,worksAt,P108,Ministry of Science and Technology,http://www.wikidata.org/entity/Q4294470
+Abdus Salam,receivedAward,P166,Copley Medal,http://www.wikidata.org/entity/Q28003
+Abdus Salam,receivedAward,P166,Nobel Prize in Physics,http://www.wikidata.org/entity/Q38104
+Abdus Salam,receivedAward,P166,Catalonia International Prize,http://www.wikidata.org/entity/Q211692
+Abdus Salam,receivedAward,P166,Adams Prize,http://www.wikidata.org/entity/Q351723
+Abdus Salam,receivedAward,P166,Royal Medal,http://www.wikidata.org/entity/Q746756
+Abdus Salam,receivedAward,P166,Atoms for Peace Award,http://www.wikidata.org/entity/Q757645
+Abdus Salam,receivedAward,P166,Hughes Medal,http://www.wikidata.org/entity/Q844872
+Abdus Salam,receivedAward,P166,Royal Society Bakerian Medal,http://www.wikidata.org/entity/Q1107771
+Abdus Salam,receivedAward,P166,Lomonosov Gold Medal,http://www.wikidata.org/entity/Q1340199
+Abdus Salam,receivedAward,P166,Matteucci Medal,http://www.wikidata.org/entity/Q1419938
+Abdus Salam,receivedAward,P166,Maxwell Medal and Prize,http://www.wikidata.org/entity/Q1745209
+Abdus Salam,receivedAward,P166,Nishan-e-Pakistan,http://www.wikidata.org/entity/Q1820710
+Abdus Salam,receivedAward,P166,Sitara-i-Imtiaz,http://www.wikidata.org/entity/Q2065289
+Abdus Salam,receivedAward,P166,Pride of Performance,http://www.wikidata.org/entity/Q2683676
+Abdus Salam,receivedAward,P166,Marcel Grossmann Award,http://www.wikidata.org/entity/Q2776640
+Abdus Salam,receivedAward,P166,National Order of Scientific Merit,http://www.wikidata.org/entity/Q3132815
+Abdus Salam,receivedAward,P166,Order of Independence,http://www.wikidata.org/entity/Q3885294
+Abdus Salam,receivedAward,P166,John Torrence Tate Medal,http://www.wikidata.org/entity/Q4287195
+Abdus Salam,receivedAward,P166,Grand Cross of the Order of Excellence,http://www.wikidata.org/entity/Q7040271
+Abdus Salam,receivedAward,P166,TWAS fellow,http://www.wikidata.org/entity/Q10458475
+Abdus Salam,receivedAward,P166,Knight Commander of the Order of the British Empire,http://www.wikidata.org/entity/Q12201445
+Abdus Salam,receivedAward,P166,Knight Grand Cross of the Order of Merit of the Italian Republic,http://www.wikidata.org/entity/Q14539974
+Abdus Salam,receivedAward,P166,Fellow of the Royal Society,http://www.wikidata.org/entity/Q15631401
+Abdus Salam,receivedAward,P166,Grand Cross of the National Order of Scientific Merit,http://www.wikidata.org/entity/Q17613667
+Abdus Salam,receivedAward,P166,honorary doctor of the University of Edinburgh,http://www.wikidata.org/entity/Q21476518
+Abdus Salam,receivedAward,P166,Edinburgh Medal,http://www.wikidata.org/entity/Q22000992
+Abdus Salam,receivedAward,P166,J. Robert Oppenheimer Memorial Prize,http://www.wikidata.org/entity/Q23055126
+Abdus Salam,receivedAward,P166,Honorary doctors of Ghent University,http://www.wikidata.org/entity/Q28814622
+Abdus Salam,receivedAward,P166,honorary doctorate from the University of Cambridge,http://www.wikidata.org/entity/Q41795465
+Abdus Salam,receivedAward,P166,Fellow of the American Physical Society,http://www.wikidata.org/entity/Q41955909
+Abdus Salam,receivedAward,P166,honorary doctor of the University of Gothenburg,http://www.wikidata.org/entity/Q42559576
+Abdus Salam,receivedAward,P166,honorary doctor of the University of Madrid Complutense,http://www.wikidata.org/entity/Q50621171
+Abdus Salam,receivedAward,P166,Fellow of the Bangladesh Academy of Science,http://www.wikidata.org/entity/Q59153507
+Abdus Salam,receivedAward,P166,Fellow of the Pakistan Academy of Sciences,http://www.wikidata.org/entity/Q59767926
+Abdus Salam,receivedAward,P166,Guthrie Medal and Prize,http://www.wikidata.org/entity/Q61576125
+Abdus Salam,receivedAward,P166,honorary doctor of the University of Science and Technology of China,http://www.wikidata.org/entity/Q63091851
+Abdus Salam,receivedAward,P166,Associate Fellow of the African Academy of Sciences,http://www.wikidata.org/entity/Q72859645
+Abdus Salam,receivedAward,P166,honorary doctor of Istanbul University,http://www.wikidata.org/entity/Q97386404
+Abdus Salam,receivedAward,P166,honorary doctor of the University of Exeter,http://www.wikidata.org/entity/Q104767284
+Abdus Salam,receivedAward,P166,Royal Society Bakerian Medal,http://www.wikidata.org/entity/Q109595718
+Abdus Salam,doctoralAdvisor,P184,Nicholas Kemmer,http://www.wikidata.org/entity/Q1382109
+Abdus Salam,doctoralAdvisor,P184,Paul Taunton Matthews,http://www.wikidata.org/entity/Q2062704
+Hans Bethe,bornIn,P19,Strasbourg,http://www.wikidata.org/entity/Q6602
+Hans Bethe,educatedAt,P69,University of Cambridge,http://www.wikidata.org/entity/Q35794
+Hans Bethe,educatedAt,P69,Goethe University Frankfurt,http://www.wikidata.org/entity/Q50662
+Hans Bethe,educatedAt,P69,LMU Munich,http://www.wikidata.org/entity/Q55044
+Hans Bethe,educatedAt,P69,Goethe-Gymnasium,http://www.wikidata.org/entity/Q195210
+Hans Bethe,educatedAt,P69,Sapienza University of Rome,http://www.wikidata.org/entity/Q209344
+Hans Bethe,worksAt,P108,Cornell University,http://www.wikidata.org/entity/Q49115
+Hans Bethe,worksAt,P108,Manhattan Project,http://www.wikidata.org/entity/Q127050
+Hans Bethe,worksAt,P108,University of Tübingen,http://www.wikidata.org/entity/Q153978
+Hans Bethe,receivedAward,P166,Nobel Prize in Physics,http://www.wikidata.org/entity/Q38104
+Hans Bethe,receivedAward,P166,Max Planck Medal,http://www.wikidata.org/entity/Q317038
+Hans Bethe,receivedAward,P166,Bruce Medal,http://www.wikidata.org/entity/Q330957
+Hans Bethe,receivedAward,P166,National Medal of Science,http://www.wikidata.org/entity/Q737051
+Hans Bethe,receivedAward,P166,Henry Draper Medal,http://www.wikidata.org/entity/Q746633
+Hans Bethe,receivedAward,P166,Enrico Fermi Award,http://www.wikidata.org/entity/Q931545
+Hans Bethe,receivedAward,P166,Eddington Medal,http://www.wikidata.org/entity/Q936106
+Hans Bethe,receivedAward,P166,Royal Society Bakerian Medal,http://www.wikidata.org/entity/Q1107771
+Hans Bethe,receivedAward,P166,Lomonosov Gold Medal,http://www.wikidata.org/entity/Q1340199
+Hans Bethe,receivedAward,P166,Oersted Medal,http://www.wikidata.org/entity/Q1351451
+Hans Bethe,receivedAward,P166,Albert Einstein Peace Prize,http://www.wikidata.org/entity/Q1670676
+Hans Bethe,receivedAward,P166,Oskar Klein Medal,http://www.wikidata.org/entity/Q1778662
+Hans Bethe,receivedAward,P166,Rumford Prize,http://www.wikidata.org/entity/Q2096481
+Hans Bethe,receivedAward,P166,Franklin Medal,http://www.wikidata.org/entity/Q3141777
+Hans Bethe,receivedAward,P166,Niels Bohr International Gold Medal,http://www.wikidata.org/entity/Q7031462
+Hans Bethe,receivedAward,P166,Foreign Member of the Royal Society,http://www.wikidata.org/entity/Q14906020
+Hans Bethe,receivedAward,P166,Pour le Mérite for Sciences and Arts order,http://www.wikidata.org/entity/Q15056034
+Hans Bethe,receivedAward,P166,Leo Szilard Lectureship Award,http://www.wikidata.org/entity/Q21659514
+Hans Bethe,receivedAward,P166,Fellow of the American Physical Society,http://www.wikidata.org/entity/Q41955909
+Hans Bethe,receivedAward,P166,Fellow of the American Academy of Arts and Sciences,http://www.wikidata.org/entity/Q52382875
+Hans Bethe,receivedAward,P166,"honorary member of the Physics Association (Frankfurt am Main, Germany)",http://www.wikidata.org/entity/Q134613391
+Hans Bethe,doctoralAdvisor,P184,Arnold Sommerfeld,http://www.wikidata.org/entity/Q77078
+Kip Thorne,bornIn,P19,Logan,http://www.wikidata.org/entity/Q482657
+Kip Thorne,educatedAt,P69,Princeton University,http://www.wikidata.org/entity/Q21578
+Kip Thorne,educatedAt,P69,California Institute of Technology,http://www.wikidata.org/entity/Q161562
+Kip Thorne,educatedAt,P69,Logan High School,http://www.wikidata.org/entity/Q6667069
+Kip Thorne,worksAt,P108,Princeton University,http://www.wikidata.org/entity/Q21578
+Kip Thorne,worksAt,P108,Leiden University,http://www.wikidata.org/entity/Q156598
+Kip Thorne,worksAt,P108,California Institute of Technology,http://www.wikidata.org/entity/Q161562
+Kip Thorne,worksAt,P108,University of Utah,http://www.wikidata.org/entity/Q168515
+Kip Thorne,receivedAward,P166,Albert Einstein Medal,http://www.wikidata.org/entity/Q17712
+Kip Thorne,receivedAward,P166,Nobel Prize in Physics,http://www.wikidata.org/entity/Q38104
+Kip Thorne,receivedAward,P166,Shaw Prize,http://www.wikidata.org/entity/Q584250
+Kip Thorne,receivedAward,P166,Guggenheim Fellowship,http://www.wikidata.org/entity/Q1316544
+Kip Thorne,receivedAward,P166,Gruber Prize in Cosmology,http://www.wikidata.org/entity/Q1483071
+Kip Thorne,receivedAward,P166,Harvey Prize,http://www.wikidata.org/entity/Q1587906
+Kip Thorne,receivedAward,P166,Lilienfeld Prize,http://www.wikidata.org/entity/Q1712436
+Kip Thorne,receivedAward,P166,Karl Schwarzschild Medal,http://www.wikidata.org/entity/Q1730176
+Kip Thorne,receivedAward,P166,Georges Lemaître Prize,http://www.wikidata.org/entity/Q2101961
+Kip Thorne,receivedAward,P166,Dr. Tomalla Prize,http://www.wikidata.org/entity/Q2440319
+Kip Thorne,receivedAward,P166,Princess of Asturias Award for Technical and Scientific Research,http://www.wikidata.org/entity/Q3320352
+Kip Thorne,receivedAward,P166,James Joyce Awards,http://www.wikidata.org/entity/Q3806623
+Kip Thorne,receivedAward,P166,Science Writing Award,http://www.wikidata.org/entity/Q6084965
+Kip Thorne,receivedAward,P166,Richtmyer Memorial Lecture Award,http://www.wikidata.org/entity/Q7331107
+Kip Thorne,receivedAward,P166,Clarivate Citation Laureates,http://www.wikidata.org/entity/Q7795894
+Kip Thorne,receivedAward,P166,UNESCO Niels Bohr Medal,http://www.wikidata.org/entity/Q17099726
+Kip Thorne,receivedAward,P166,Kavli Prize in Astrophysics,http://www.wikidata.org/entity/Q18889778
+Kip Thorne,receivedAward,P166,James Madison Medal,http://www.wikidata.org/entity/Q21662156
+Kip Thorne,receivedAward,P166,Fellow of the American Physical Society,http://www.wikidata.org/entity/Q41955909
+Kip Thorne,receivedAward,P166,honorary doctor of the University Polytechnic of Catalonia,http://www.wikidata.org/entity/Q50616780
+Kip Thorne,receivedAward,P166,Fellow of the American Academy of Arts and Sciences,http://www.wikidata.org/entity/Q52382875
+Kip Thorne,receivedAward,P166,The Shaw Prize in Astronomy,http://www.wikidata.org/entity/Q57232945
+Kip Thorne,receivedAward,P166,honorary doctor of ETH Zürich,http://www.wikidata.org/entity/Q62505651
+Kip Thorne,receivedAward,P166,Cocconi Prize,http://www.wikidata.org/entity/Q107061834
+Kip Thorne,doctoralAdvisor,P184,John Archibald Wheeler,http://www.wikidata.org/entity/Q202631

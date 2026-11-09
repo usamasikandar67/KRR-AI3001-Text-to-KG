@@ -7,3 +7,4 @@ INSTRUCTIONS_PERFECT.txt
 extracted_instructions.txt
 clean_instructions.txt
 *.zip
+.DS_Store
